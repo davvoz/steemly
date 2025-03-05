@@ -7,7 +7,7 @@ import {
 } from '@nativescript/angular';
 import { AppComponent } from './app/app.component';
 // Import from the index file insteadle NativeScript path format
-import { routes } from './app';
+import { routes } from './app/app.routes';
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
 runNativeScriptAngularApp({
