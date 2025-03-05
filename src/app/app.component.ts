@@ -1,10 +1,17 @@
 import { Component, NO_ERRORS_SCHEMA } from '@angular/core';
-import { PageRouterOutlet } from '@nativescript/angular';
+import { NativeScriptCommonModule, NativeScriptModule, NativeScriptRouterModule } from '@nativescript/angular';
 
 @Component({
   selector: 'ns-app',
-  templateUrl: './app.component.html',
-  imports: [PageRouterOutlet],
+  standalone: true,
+  imports: [NativeScriptCommonModule, NativeScriptModule, NativeScriptRouterModule],
   schemas: [NO_ERRORS_SCHEMA],
+  template: `
+    <GridLayout>
+      <page-router-outlet></page-router-outlet>
+    </GridLayout>
+  `
 })
-export class AppComponent {}
+export class AppComponent {
+  title = 'Steemly';
+}
