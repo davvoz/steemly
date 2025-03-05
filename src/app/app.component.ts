@@ -1,17 +1,17 @@
-import { Component, NO_ERRORS_SCHEMA } from '@angular/core';
-import { NativeScriptCommonModule, NativeScriptModule, NativeScriptRouterModule } from '@nativescript/angular';
+import { Component } from '@angular/core';
+import { NativeScriptCommonModule, NativeScriptRouterModule } from '@nativescript/angular';
 
 @Component({
-  selector: 'ns-app',
+  selector: 'app-root',
   standalone: true,
-  imports: [NativeScriptCommonModule, NativeScriptModule, NativeScriptRouterModule],
-  schemas: [NO_ERRORS_SCHEMA],
+  imports: [
+    NativeScriptCommonModule,
+    NativeScriptRouterModule
+  ],
   template: `
-    <GridLayout>
-      <page-router-outlet></page-router-outlet>
-    </GridLayout>
+    <page-router-outlet></page-router-outlet>
   `
 })
 export class AppComponent {
-  title = 'Steemly';
+  title = 'steemly';
 }
