@@ -20,6 +20,6 @@ export class ItemDetailComponent implements OnInit {
     this.item.set(this.itemService.getItem(id))
 
     // log the item to the console
-    console.log(this.item())
+    console.log("ecco",this.item())
   }
 }
