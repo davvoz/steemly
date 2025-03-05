@@ -9,7 +9,8 @@
     "start": "ns run",
     "build": "ns build",
     "preview": "ns preview",
-    "build.android": "ns build android --release"
+    "build.android": "ns build android --release",
+    "stackblitz-preview": "echo 'StackBlitz preview mode active - For full NativeScript functionality, please use a local development environment'"
   },
   "dependencies": {
     "@angular/animations": "^19.1.0",

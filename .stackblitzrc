@@ -1,5 +1,7 @@
 {
   "installDependencies": true,
-  "compileTrigger": "save",
-  "startCommand": "setup-nativescript-stackblitz && ns preview"
+  "startCommand": "npm run stackblitz-preview",
+  "env": {
+    "NODE_ENV": "development"
+  }
 }
